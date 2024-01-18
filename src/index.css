@@ -1,0 +1,217 @@
+/* @import url('https://fonts.cdnfonts.com/css/caviar-dreams?styles=181,180,179,178') */
+@import url('https://fonts.googleapis.com/css2?family=Miniver&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @font-face {
+  font-family: "Caviar Dreams Bold";
+  src: url("./caviar-dreams-bold.ttf");
+}
+@font-face {
+  font-family: "metropolis-1920-regular";
+  src: url("./Metropolis 1920.otf");
+} */
+.nn{
+  height:40px !important;
+  font-family: 'Josefin Sans', 'sans-serif';
+}
+.Dotted-After::after{
+    border-bottom:1px solid #715b3e;
+    border-top:1px solid #715b3e;
+}
+
+.ankap{
+  font-family: 'metropolis-1920-regular', sans-serif;
+}
+
+
+body {
+  position: relative;
+}
+@media only screen and (min-width: 770px) {
+body::after {
+  z-index: 9;
+  height: 100%;
+  width: 1px;
+  content: "";
+  background-color: #c9ab81; 
+  position: absolute;
+  top: 0;
+  left: 6rem;
+}
+}
+@media only screen and (min-width: 770px) {
+body::before {
+  z-index: 9;
+  height: 100%;
+  width: 1px;
+  content: "";
+  background-color: #c9ab81; 
+  position: absolute;
+  top: 0;
+  right: 6rem;
+}
+}
+
+  
+  .Header__Links {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: white;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .Header__Links::before {
+    position: absolute;
+    content: "";
+    bottom: -0.5rem;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: #c9ab81;
+    transition: all;
+    transition-duration: 150ms;
+    cursor: pointer;
+  }
+  
+  .Header__Links::after {
+    position: absolute;
+    content: "";
+    bottom: -0.25rem;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: #c9ab81;
+    transition: all;
+    transition-duration: 300ms;
+    cursor: pointer;
+  }
+  
+  .Header__Links:hover::before {
+    width: 100%;
+  }
+  
+  .Header__Links:hover::after {
+    width: 100%;
+  }
+  
+  
+
+/*svg{
+  height:0;
+  width:250px;
+  transform:translate(-50% , -50%);
+  animation-name:aaa;
+  animation-duration:1s;
+  animation-fill-mode:forwards;
+}
+
+@keyframes aaa {
+  from {
+    height:0;
+  } 
+  to{
+    height:400px;
+  }
+}
+*/
+.hv_btn {
+  background: none;
+  border: 0;
+  box-sizing: border-box;
+  margin: 1em;
+  padding: 1em 2em;
+  box-shadow: inset 0 0 0 2px #f45e61;
+  font-size: inherit;
+  font-weight: 700;
+  position: relative;
+  vertical-align: middle;
+}
+.hv_btn::before, .hv_btn::after {
+  box-sizing: inherit;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.spin {
+  width: 5em;
+  height: 5em;
+  padding: 0;
+  
+  
+}
+.circle:hover {
+    color: #c9ab81;
+  }
+
+  .circle::before {
+    top: 0;
+    left: 0;
+  }
+  .circle::after {
+    top: 0;
+    left: 0;
+  }
+
+  .circle::before {
+    border: 2px solid transparent; 
+  }
+
+  .circle:hover::before {
+    border-top-color: #c9ab81; 
+    border-right-color: #c9ab81;
+    border-bottom-color: #c9ab81;
+
+    transition:
+      border-top-color 0.15s linear, 
+      border-right-color 0.15s linear 0.10s,
+      border-bottom-color 0.15s linear 0.20s;
+  }
+
+  .circle::after {
+    border: 0 solid transparent; 
+  }
+
+  .circle:hover::after {
+    border-top: 2px solid #c9ab81; 
+    border-left-width: 2px; 
+    border-right-width: 2px;
+    transform: rotate(270deg); 
+    transition:
+      transform 0.4s linear 0s,
+      border-left-width 0s linear 0.35s; 
+  }
+.circle {
+  border-radius: 100%;
+  box-shadow: none;
+    
+ 
+}
+.circle::before{
+    border-radius: 100%;
+  }
+  .circle::after {
+    border-radius: 100%;
+  }
+
+
+.openED{
+  
+  width:80%;
+   height:80%; 
+   border: 1px black solid;
+   position: absolute;
+   z-index: 99;
+   top: 10%;
+   left: 10%;
+   transform: translateX(-50%);
+   transform:translateY(-50%);
+}  
